@@ -18,10 +18,11 @@ sayBye();
 sayBye();
 
 // Day 2 - Getting HTML elements
-let nextBtn = document.querySelector("#next-btn");
+let nextButton = document.querySelector("#next-btn");
 let nextMeeting = document.querySelector("#next-meeting")
 
 function showNextMeeting() {
-    showNextMeeting.textContent = "Our next meeting is Sunday, November 8 at 3 PM.";
+    nextMeeting.textContent = "Our next meeting is Sunday, November 8 at 3 PM.";
 }
-nextBtn.addEventListener("click", showNextMeeting)
+// Add Event Listener to Button
+nextButton.addEventListener("click", showNextMeeting)
