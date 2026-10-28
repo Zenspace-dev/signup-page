@@ -20,7 +20,7 @@ h2 {
     margin: 40px 40;
     border: 3px dashed darkgreen;
     padding: 60px;
-    background-color: rgb(99, 236, 202);
+    background-color: rgb(221, 242, 237);
     border-radius: 4px;
 }
 label {
@@ -53,4 +53,14 @@ textarea:focus {
 
 input:user-invalid {
     border: 2px crimson solid;
+}
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 200px;
+    border: 2px solid drakgreen;
+    padding: 16px;
 }
