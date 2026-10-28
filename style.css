@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,4 +22,25 @@ h2 {
     padding: 60px;
     background-color: rgb(99, 236, 202);
     border-radius: 4px;
+}
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  max-width: 30rem;
+  font: inherit;
+}
+
+button {
+  margin-top: 14px;
+  display: block;
+  padding: 15px;
+  background-color:darkgreen;
+  color:antiquewhite;
+  font: inherit;
 }
