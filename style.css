@@ -25,7 +25,6 @@ h2 {
 }
 label {
   display: block;
-  margin-top: 14px;
   font-weight: bold;
 }
 
@@ -37,7 +36,6 @@ input, select, textarea {
 }
 
 button {
-  margin-top: 14px;
   display: block;
   padding: 15px;
   background-color:darkgreen;
@@ -63,4 +61,22 @@ input:user-invalid {
     flex: 1 1 200px;
     border: 2px solid drakgreen;
     padding: 16px;
+    background-color: antiquewhite;
+    border-color: darkgreen;
+    border-radius: 4px;
+}
+h6 {
+    color: rgb(174, 165, 165);
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 30rem;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }

@@ -29,17 +29,20 @@
              <section id="reasons">
                 <h2>Three reasons to join</h2>
                 <div class="cards">
+                    <!-- Card 1 -->
                     <div class="card">
                     <h3>Great books</h3>
                     <p>We vote on what to read next.</p>
                     </div>
+                    <!-- Card 2  -->
                     <div class="card">
                     <h3>Good snacks</h3>
                     <p>Cafe` Bene` has the best raspberry scones!</p>
                     </div>
+                    <!--Card 3  -->
                     <div class="card">
                     <h3>New friends</h3>
-                    <p>Everyone is welcome, no pressure.</p>
+                    <p>Judgement free zone</p>
                     </div>
                 </div>
                 </section>
@@ -55,23 +58,37 @@
                 <h2>Join Us</h2>
                 <p>Interested in joining our book club? Contact us to learn more!</p>
                 <!-- Sign up form -->
-                <form>
+                <form autocomplete="off">
+                    <div class="field">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="required">
-                    
+                    </div>
+
+                    <div class="field">
                     <label for="email">Your Email</label>
                     <input type="email" id="email" placeholder="you@example">
-                    
+                    <h6>We'll only use this to send the schedule</h6>
+                    </div>
+
+                    <div class="field">
+                    <label for="password">Create password for the members' page</label>
+                    <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="field">
                     <label for="session">Which Meeting can you attend?</label>
                     <select id="session" name="session">
                     <option value="Choose a session"></option>
                     <option value="First Sunday"></option>
                     <option value="Third Sunday"></option>
                     <option value="Either is fine"></option>
-
                     </select>
+                    </div>
+
+                    <div class="field">
                     <label for="message">Anything we should know?</label>
                     <textarea id="message" name="message" rows="4"></textarea>         
+                    </div>
                     
                     <button type="submit">Sign Up</button>
                 </form>
