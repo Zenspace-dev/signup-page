@@ -94,3 +94,15 @@ form {
 .compair * {
   outline: 2px dashed tomato;
 }
+.hero {
+    background-color: rgba(0, 100, 0, 0.85);
+    padding: 64px 24px;
+    justify-content: center;
+}
+.cta {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+}
