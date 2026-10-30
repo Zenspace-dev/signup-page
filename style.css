@@ -18,10 +18,21 @@ h2 {
 }
 .box {
     margin: 40px 40;
-    border: 3px dashed darkgreen;
+    border: 3px solid darkgreen;
     padding: 60px;
-    background-color: rgb(221, 242, 237);
+    background-color: antiquewhite;
     border-radius: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    border: 2px solid darkgreen;
+}
+
+a {
+    color: darkgreen;
+    font-weight: bold;
 }
 label {
   display: block;
@@ -59,7 +70,7 @@ input:user-invalid {
 }
 .card {
     flex: 1 1 200px;
-    border: 2px solid drakgreen;
+    border: 2px solid darkgreen;
     padding: 16px;
     background-color: antiquewhite;
     border-color: darkgreen;
@@ -79,4 +90,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+.compair * {
+  outline: 2px dashed tomato;
 }
