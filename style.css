@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --page-bg: antiquewhite;
+    --text: rgb(44, 44, 77);
+    --brand: teal;
+    --headline: beige;
+    --box: rgb(92, 42, 109);
+    --boxbg: rgb(128, 76, 170);
+}
 
 html {
     scroll-behavior: smooth;
@@ -8,30 +16,42 @@ html {
 body {
     font-family: Arial, sans-serif;
     margin: 0 24px;
-    background-color: rgb(180, 241, 221);
+    background-color: var(--page-bg);
 }
 h1 {
-    color:rgb(31, 141, 145);
+    color: var(--brand);
+    text-align: center;
+}p {
+    font-size: 16px;
+    color: var(--text);
+    font-weight: strong;
+    text-align: center;
 }
+
 h2 {
-    color:rgb(40, 167, 167);
+    color: var(--headline);
+    text-align: center;
 }
+h3 {
+    color: var(--text);
+    text-align: center;
+}   
 .box {
     margin: 40px 40;
-    border: 3px solid darkgreen;
+    border: 3px solid var(--box);
     padding: 60px;
-    background-color: antiquewhite;
+    background-color: var(--boxbg);
     border-radius: 4px;
 }
 nav {
     display: flex;
     justify-content: space-around;
     background-color: antiquewhite;
-    border: 2px solid darkgreen;
+    border: 2px solid var(--boxbg);
 }
 
 a {
-    color: darkgreen;
+    color: var(--text);
     font-weight: bold;
 }
 label {
@@ -49,14 +69,15 @@ input, select, textarea {
 button {
   display: block;
   padding: 15px;
-  background-color:darkgreen;
-  color:antiquewhite;
+  background-color: var(--page-bg);
+  color: var(--text);
   font: inherit;
+  margin: 0 auto;
 }
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid darkgreen;
+    outline: 3px solid var(--box);
     outline-offset: 2px;
 }   
 
@@ -67,14 +88,16 @@ input:user-invalid {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-}
+  
 .card {
     flex: 1 1 200px;
-    border: 2px solid darkgreen;
+    border: 2px solid;
     padding: 16px;
-    background-color: antiquewhite;
-    border-color: darkgreen;
+    background-color: var(--brand);
+    border-color: var(--box);
     border-radius: 4px;
+    color: var(--page-bg);
+}
 }
 h6 {
     color: rgb(174, 165, 165);
@@ -85,25 +108,48 @@ form {
     flex-direction: column;
     gap: 16px;
     max-width: 30rem;
+    margin: 0 auto;
 }
 .field {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    
+   
 }
 .compair * {
   outline: 2px dashed tomato;
+  text-align: center;
+  color: var(--text);
 }
 .hero {
-    background-color: rgba(0, 100, 0, 0.85);
+    display: flex;
+    background-color: var(--boxbg);
     padding: 64px 24px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+@media (min-width: 700px) {
+    .hero h2 {
+        font-size: 3rem;
+    } 
+}     
 .cta {
     display: inline-block;
-    background-color: gold;
+    background-color: var(--brand);
     color: black;
     border-radius: 8px;
     font-weight: bold;
-    padding: 4px;
+    padding: 6px;
 }
+body.dark {
+    --page-bg: rgb(55, 11, 55);
+    --text: antiquewhite;
+    --brand: teal;
+    --headline: beige;
+    --box: rgb(92, 42, 109);
+    --boxbg: rgb(128, 76, 170);
+}
+
+
