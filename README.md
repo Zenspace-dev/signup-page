@@ -8,7 +8,7 @@ https://zenspace-dev.github.io/signup-page/
 - Editor: VS Code
 - Git version: (git version 2.56.0.windows.2)
 - Git name: (Zenspace-dev)
-- Git email: (galizurflutes@gmail.com)
+- Git email: (zenspace.dev@gmail.com)
 
 ## ACP log
 | # | What I changed | Commit message | Branch |
